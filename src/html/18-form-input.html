@@ -28,5 +28,68 @@
         <button type="submit">전송</button>
       </fieldset>
     </form>
+
+    <hr />
+    <form method="post" action="https://formspree.io/f/xeqwwbwk">
+      <fieldset>
+        <legend>유저정보</legend>
+        <div class="form_group">
+          <label for="userName" required>이름</label>
+          <input id="userName" type="text" />
+        </div>
+        <div class="form_group">
+          <label for="userPwd" required>비밀번호</label>
+          <input id="userPwd" type="password" />
+        </div>
+        <div class="form_group">
+          <label for="userSearch">검색어</label>
+          <input id="userSearch" type="search" placeholder="검색어를 입력하세요" />
+        </div>
+        <div class="form_group">
+          <label for="userPhoneNum">전화번호</label>
+          <input id="userPhoneNum" type="tel" />
+        </div>
+        <div class="form_group">
+          <label for="userEmail">이메일</label>
+          <input id="userEmail" type="email" />
+        </div>
+        <div class="form_group">
+          <label for="userEmail2">이메일</label>
+          <input id="userEmail2" type="email" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>관심 기술</legend>
+        <div class="form_group">
+          <label>
+            <input class="ipt_chk" type="checkbox" name="skills" checked />
+            <span class="txt">HTML</span>
+          </label>
+          <label>
+            <input class="ipt_chk" type="checkbox" name="skills" />
+            <span class="txt">CSS</span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>소속 팀</legend>
+        <div class="form_group">
+          <!-- 암묵적인 레이블링: 스크린리더 환경에서의 이슈때문에 권장하지 않음 -->
+          <label>
+            <input class="ipt_radio" type="radio" name="team" checked />
+            <span class="txt">회고 1팀</span>
+          </label>
+          <label>
+            <input class="ipt_radio" type="radio" name="team" />
+            <span class="txt">회고 2팀</span>
+          </label>
+        </div>
+      </fieldset>
+      <div class="btn_area">
+        <button type="submit">전송</button>
+        <button type="reset">초기화</button>
+        <button type="button">버튼</button>
+      </div>
+    </form>
   </body>
 </html>
