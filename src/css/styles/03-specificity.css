@@ -1,0 +1,24 @@
+/* 본문의 기본 여백 설정 */
+body {
+  margin: 20px;
+  color: gray;
+}
+
+/* 상속 */
+a {
+  color: inherit;
+}
+
+/* 상속 */
+.wrapper {
+  color: purple;
+}
+
+/* 겹침 */
+h1 + p.like {
+  color: blue !important;
+}
+
+.like {
+  color: red;
+}
