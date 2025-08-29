@@ -1,0 +1,24 @@
+body {
+  margin: 20px;
+}
+
+/* 배경 스타일링 */
+/* body {
+  background-color: #ffc;
+  background-image: url('/src/assets/images/sun.png'), url('/src/assets/images/cloud.png');
+  background-repeat: no-repeat;
+  background-size:
+    100px 100px,
+    200px 150px;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+} */
+
+body {
+  background-color: red;
+  /* background: url('/src/assets/images/sun.png') no-repeat 50% 30% / 100px 100px fixed; */
+  background:
+    url('/src/assets/images/sun.png') no-repeat 50% 30% / 100px 100px fixed,
+    url('/src/assets/images/cloud.png') no-repeat 50% 30% / 150px 150px fixed,
+    #ffc;
+}
