@@ -1,0 +1,41 @@
+@property --text-color {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #f0c;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+body {
+  margin: 20px;
+  color: var(--text-color);
+}
+
+div {
+  --text-color: #00f;
+
+  color: var(--text-color);
+
+  p {
+    color: var(--text-color);
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  font-size: 30px;
+  color: #fff;
+  --angle: 0deg;
+  transform: rotate(var(--angle));
+  transition: --angle 1s;
+}
+
+.box:hover {
+  --angle: 90deg;
+}
