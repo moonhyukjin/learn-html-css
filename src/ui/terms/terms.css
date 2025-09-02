@@ -2,37 +2,68 @@ body {
   margin: 20px;
 }
 
-/* 컨포넌트 */
+/* 컴포넌트 */
 .term {
+  --accent-color: #296897;
+  --text-size: 14px;
+
   display: flow-root;
-  width: 218px;
+  font-size: var(--text-size);
+
+  .subject {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1.2em;
+  }
 
   .subject,
   .description {
     float: right;
-    width: calc(100% - 16px - 60px);
-  }
-
-  .subject {
-    font-size: 14px;
-    font-weight: 600;
+    width: calc(100% - 76px);
     line-height: 1.5;
-    color: #296897;
   }
 
   .thumbnail {
     float: left;
-    width: 60px;
-
-    img {
-      width: 100%;
-    }
   }
 
   .description {
     margin-top: 4px;
-    font-size: 14px;
+    font-size: 1em;
+  }
+}
+
+/* 레이아웃 */
+.terms {
+  --gray-700: #7a7a7a;
+  --gray-600: #ccc;
+  --gray-500: #eee;
+
+  width: 250px;
+  padding: 16px;
+  background: var(--gray-600) linear-gradient(180deg, var(--gray-600) 0%, var(--gray-500) 100%);
+  border: 1px solid var(--gray-700);
+  border-radius: 5px;
+
+  .headline {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 1.2rem;
     line-height: 1.5;
-    color: #181818;
+  }
+
+  .term {
+    margin-top: 12px;
+
+    &:nth-child(2n-1) {
+      .subject,
+      .description {
+        float: left;
+      }
+
+      .thumbnail {
+        float: right;
+      }
+    }
   }
 }
