@@ -1,0 +1,56 @@
+body {
+  margin: 20px;
+}
+
+/* width/height - inline-size/block-size */
+.like {
+  background: yellow;
+  /* width: 400px; */
+  inline-size: 400px;
+  /* height: 100px; */
+  block-size: 100px;
+}
+
+.lion {
+  background-color: pink;
+  /* padding-top */
+  padding-block-start: 20px;
+  /* padding-bottom */
+  padding-block-end: 30px;
+  /* margin-left */
+  margin-inline-start: 20px;
+}
+
+/* float */
+.bootcamp {
+  background-color: aqua;
+
+  strong {
+    background-color: orange;
+    /* float: left */
+    float: inline-start;
+  }
+}
+
+/* position */
+.frontend {
+  background-color: lime;
+  padding: 20px;
+  position: relative;
+
+  strong {
+    background-color: orange;
+    position: absolute;
+    inset: 0;
+  }
+}
+
+/* border */
+.euid {
+  background-color: silver;
+  padding: 10px;
+  /* border-top: 2px solid red; */
+  border-block-start: 2px solid red;
+  /* border-bottom: 2px dashed blue; */
+  border-block-end: 2px dashed blue;
+}

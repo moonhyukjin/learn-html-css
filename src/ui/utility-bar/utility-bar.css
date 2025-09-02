@@ -1,0 +1,29 @@
+/* 유틸리티 바 */
+.utility-bar {
+  font-size: 0;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    font-size: 0;
+    line-height: 1.5;
+    color: #000;
+
+    span {
+      display: inline-block;
+      margin: 0 8px;
+      font-size: 14px;
+      background-color: red;
+    }
+
+    a {
+      background-color: palegoldenrod;
+      display: inline-block;
+      padding: 8px;
+      font-size: 14px;
+      color: inherit;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
