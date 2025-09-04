@@ -1,0 +1,61 @@
+body {
+  margin: 20px;
+}
+
+/* Stacking Context */
+.likelion {
+  background: #ffc;
+  border: 1px solid currentColor;
+  block-size: 200px;
+  position: relative;
+  z-index: 3;
+
+  .bootcamp,
+  .frontend,
+  .euid {
+    border: inherit;
+    inline-size: 50px;
+    aspect-ratio: 1/1;
+  }
+
+  .bootcamp {
+    background: rgba(255, 0, 0, 1);
+    position: absolute;
+    inset-block-start: -20px;
+    inset-inline-start: 10px;
+    z-index: 1;
+  }
+
+  .frontend {
+    background: pink;
+  }
+
+  .euid {
+    background: skyblue;
+  }
+}
+
+.cafe-w {
+  border: 10px solid currentColor;
+  inline-size: 500px;
+  block-size: 200px;
+  position: relative;
+
+  .hero {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+  }
+  .star {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  .text {
+    background: yellow;
+    padding: 1em;
+  }
+}
